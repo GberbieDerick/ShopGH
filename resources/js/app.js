@@ -1,3 +1,4 @@
+Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf_token"]').getAttribute('content'); //add token;
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -11,7 +12,9 @@ import VueRouter from 'vue-router';
 import routes from './routes.js';
 import App from './components/App.vue';
 
+
 window.Vue = require('vue');
+
 
 
 
